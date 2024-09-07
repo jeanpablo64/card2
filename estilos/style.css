@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+}
+
+:root {
+    --font1: 'figtree', cursive;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 410px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 7px 7px black;
+}
+
+.card > .imagem > img {
+    width: 370px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.card > section {
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 370px;
+    height: 250px;
+}
+
+.aprendendo {
+    background-color: yellowgreen;
+    font-family: var(--font1);
+    font-weight: bold;
+
+    width: 100px;
+    height: 30px;
+
+    padding-top: 2px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.data {
+    padding-top: 10px;
+}
+
+article {
+    width: 370px;
+    height: 110px;
+}
+
+article > h1 {
+    padding: 10px 0 10px 0;
+}
+
+.user {
+    display: flex;
+    width: 200px;
+}
+
+.user > img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.user > p {
+    padding: 10px 10px 0 10px;
+    font-weight: bold;
+}
